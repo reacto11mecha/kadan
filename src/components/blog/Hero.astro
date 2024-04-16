@@ -45,7 +45,7 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 	{
 		data.updatedDate && (
 			<span class="rounded-lg bg-quote/10 p-1 text-quote">
-				Last Updated:
+				Terakhir diperbarui:
 				<FormattedDate class="ms-1" date={data.updatedDate} dateTimeOptions={dateTimeOptions} />
 			</span>
 		)
@@ -78,7 +78,10 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 						class="cactus-link inline-block before:content-['#']"
 						data-pagefind-filter="tag"
 						href={`/tags/${tag}/`}
-					>{tag}</a>{i < data.tags.length - 1 && ", "}
+					>
+						{tag}
+					</a>
+					{i < data.tags.length - 1 && ", "}
 				</>
 			))}
 		</div>
