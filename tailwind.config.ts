@@ -23,7 +23,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				bgColor: "hsl(var(--theme-bg) / <alpha-value>)",
+				bgColor: "var(--theme-bg)",
 				textColor: "hsl(var(--theme-text) / <alpha-value>)",
 				link: "hsl(var(--theme-link) / <alpha-value>)",
 				accent: "hsl(var(--theme-accent) / <alpha-value>)",
@@ -32,7 +32,7 @@ export default {
 			},
 			fontFamily: {
 				// Add any custom fonts here
-				sans: [...fontFamily.sans],
+				sans: ["Inter Variable", ...fontFamily.sans],
 				serif: [...fontFamily.serif],
 			},
 			transitionProperty: {

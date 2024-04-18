@@ -14,13 +14,13 @@ export const siteConfig: SiteConfig = {
 		},
 	},
 	// Meta property used as the default description meta property
-	description: "Publikasi digital SMAN 12 Bekasi.",
+	description: "Taman Bunga SMAN 12 Bekasi.",
 	// HTML lang property, found in src/layouts/Base.astro L:18
 	lang: "id-ID",
 	// Meta property, found in src/components/BaseHead.astro L:42
 	ogLocale: "id_ID",
 	// Meta property used to construct the meta title property, found in src/components/BaseHead.astro L:11
-	title: "Artikel Digital SMAN 12 Bekasi",
+	title: "Kadan | Taman Bunga",
 };
 
 // Used to generate links in both the Header & Footer.
