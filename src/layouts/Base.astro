@@ -22,6 +22,11 @@ const {
 <html lang={siteConfig.lang}>
 	<head>
 		<BaseHead articleDate={articleDate} description={description} ogImage={ogImage} title={title} />
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.css"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<ThemeProvider />
@@ -31,5 +36,29 @@ const {
 			<slot />
 		</main>
 		<Footer />
+		<script is:inline src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"
+		></script>
+		<script is:inline>
+			new Sakura("body", {
+				delay: 850,
+				colors: [
+					{
+						gradientColorStart: "rgba(255, 183, 197, 0.9)",
+						gradientColorEnd: "rgba(255, 197, 208, 0.9)",
+						gradientColorDegree: 120,
+					},
+					{
+						gradientColorStart: "rgba(255,189,189)",
+						gradientColorEnd: "rgba(227,170,181)",
+						gradientColorDegree: 120,
+					},
+					{
+						gradientColorStart: "rgba(212,152,163)",
+						gradientColorEnd: "rgba(242,185,196)",
+						gradientColorDegree: 120,
+					},
+				],
+			});
+		</script>
 	</body>
 </html>
