@@ -36,17 +36,16 @@ const {
 			<slot />
 		</main>
 		<Footer />
-		<script
-			is:inline
-			src="https://cdn.jsdelivr.net/gh/reacto11mecha/sakura-fix-backup@master/dist/sakura.min.js"
+		<script is:inline
+    src="https://cdn.jsdelivr.net/gh/reacto11mecha/sakura-fix-backup@master/dist/sakura.min.js"
 		></script>
 		<script is:inline>
 			new Sakura("body", {
 				delay: 850,
-				lifeTime: 5500,
+        lifeTime: 5500,
 				colors: [
 					{
-						gradientColorStart: "rgba(236,72,153)",
+						gradientColorStart: "rgba(212,152,163)",
 						gradientColorEnd: "rgba(242,185,196)",
 						gradientColorDegree: 120,
 					},
